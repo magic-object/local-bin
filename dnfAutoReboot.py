@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-
+"""
+このプログラムは DNF でチェックを行い更新があれば更新後に再起動する。
+cron により、毎晩実行する事で自動的に更新できる様にする。
+"""
 import subprocess
 import os
 import sys

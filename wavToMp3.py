@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+"""
+このプログラムは .wav .flac などの音声ファイルを MP3 に変換する。 
+これにより音声ファイルサイズを半分以下にする。
+"""
 
 import magic
 import os
@@ -8,13 +12,6 @@ import pathlib
 import re
 import glob
 
-# これはサンプルの Python スクリプトです。
-
-# Shift+F10 を押して実行するか、ご自身のコードに置き換えてください。
-# Shift を2回押す を押すと、クラス/ファイル/ツールウィンドウ/アクション/設定を検索します。
-
-
-# ガター内の緑色のボタンを押すとスクリプトを実行します。
 if __name__ == '__main__':
     args = sys.argv
     if len(args) < 2:

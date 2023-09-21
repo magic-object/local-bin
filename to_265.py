@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+"""
+このプログラムは H.264 を x265 に変換する。 
+これにより動画のファイルサイズを半分以下にする。
+"""
 
 import magic
 import os
