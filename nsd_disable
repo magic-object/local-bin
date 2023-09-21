@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if ( test $UID -ne 0 )
+then
+	exit 1;
+fi
+
+if ( systemctl status nsd )
+then
+	systemctl stop nsd;
+fi
+
+systemctl disable nsd;
+
+exit 0;
