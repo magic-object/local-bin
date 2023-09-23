@@ -11,7 +11,6 @@ import pathlib
 import re
 import glob
 
-# ガター内の緑色のボタンを押すとスクリプトを実行します。
 if __name__ == '__main__':
     args = sys.argv
     if len(args) < 2:
