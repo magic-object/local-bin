@@ -32,9 +32,9 @@ if __name__ == '__main__':
         print( 'PROCESSING : ' + filePath )
         
         fileName = pathlib.Path( filePath ).name
-        target = re.search( '(264)|((?=\s)AVC(?=\s))', fileName )
+        target = re.search( r'(264)|((?=\s)AVC(?=\s))', fileName )
         if target:
-            outFileName = re.sub( '(264)|((?=\s)AVC(?=\s))', '265', fileName )
+            outFileName = re.sub( r'(264)|((?=\s)AVC(?=\s))', '265', fileName )
             fileName = outFileName
             outFile = pathlib.Path( filePath ).parent.joinpath( outFileName )
         else:
